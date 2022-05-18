@@ -1,0 +1,229 @@
+@import "catg";
+@import "notApp";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+ 
+}
+.d-flex{
+    display: flex;
+}
+.frame{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/*root*/
+.d-flex-row{
+    display: flex;
+}
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.d-flex-align-items{
+    align-items: center;
+}
+.d-flex-space-around{
+    justify-content: space-around;
+}
+.d-flex-center-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{cursor: pointer;}
+
+
+/*notApp-info*/
+.notApp-info
+{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    padding-left: 10%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .inpt{
+        width: 300px;
+        height: 30px;
+        margin-bottom: 1rem;
+        border: 1px solid whitesmoke;
+        &::placeholder{
+            text-align: center;
+       
+        }
+        cursor: pointer;
+    }
+    textarea{
+        min-width: 60%;
+        min-height: 40%;
+        resize: none;
+        padding: 3rem;
+        font-size: 40px;
+
+        border: 1px solid whitesmoke;
+        &::placeholder{
+            text-align: center;
+       
+        }
+        cursor: pointer;
+    }
+    .btn-update-button{
+        width: 16rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        border: 0px;
+        
+        font-size: 20px;
+        font-weight: 600;
+        background-color: $color;
+        color: white;
+        &:active{
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+/*responsive 320-425*/
+@media (min-width:320px) and (max-width:425px) 
+{
+
+    .catg{
+        width: 100%;
+        min-height: 100%;
+        padding-top: 1rem;
+        justify-content: flex-start;
+    }
+    .catg-content {
+        width: 100%;
+        min-height: 10vh;
+    }
+    .notApp{
+        width: 100%;
+        padding: 0px;
+    }
+    .frame
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .notApp-info 
+    {
+        align-items: center;
+        padding: 0px;
+        padding-top: 1rem;
+    
+            textarea {
+                max-width: 100%;
+                min-height: 40%;
+                resize: none;
+                padding: 0rem;
+                font-size: 18px;
+                border: 1px solid whitesmoke;
+                cursor: pointer;
+                text-align: justify;
+                padding: .5rem;
+            }
+    }
+    .btn-add .btn-add-button {
+        width: 50%;
+        margin-top: 1rem;
+    }
+}
+@media  (max-width:768px) 
+{
+
+    .catg{
+        width: 100%;
+        min-height: 100%;
+        padding-top: 1rem;
+        justify-content: flex-start;
+    }
+    .catg-content {
+        width: 100%;
+        min-height: 10vh;
+    }
+    .notApp{
+        width: 100%;
+        padding: 0px;
+    }
+    .frame
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .notApp-info 
+    {
+        align-items: center;
+        padding: 0px;
+        padding-top: 1rem;
+    
+            textarea {
+                min-width: 90%;
+                min-height: 40%;
+                resize: none;
+                padding: 0rem;
+                font-size: 18px;
+                border: 1px solid whitesmoke;
+                cursor: pointer;
+                text-align: justify;
+                padding: .5rem;
+            }
+    }
+    .btn-add .btn-add-button {
+        width: 50%;
+        margin-top: 1rem;
+    }
+}
+@media  (max-width:1024px) 
+{
+
+    .catg{
+        
+        min-height: 100%;
+        padding-top: 1rem;
+        justify-content: flex-start;
+    }
+    .catg-content {
+        width: 100%;
+        min-height: 10vh;
+    }
+    .notApp{
+        width: 100%;
+        padding: 0px;
+    }
+ 
+    .notApp-info 
+    {
+        align-items: center;
+        padding: 0px;
+        padding-top: 1rem;
+    
+            textarea {
+                min-width: 90%;
+                min-height: 40%;
+                resize: none;
+                padding: 0rem;
+                font-size: 18px;
+                border: 1px solid whitesmoke;
+                cursor: pointer;
+                text-align: justify;
+                padding: .5rem;
+            }
+    }
+    .btn-add .btn-add-button {
+        width: 50%;
+        margin-top: 1rem;
+    }
+}

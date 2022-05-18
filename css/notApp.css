@@ -1,0 +1,67 @@
+/*notApp*/
+.notApp {
+  width: 100%;
+  max-height: 130vh;
+  background-color: #dadeef;
+  padding: 1.2rem;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  overflow: auto;
+}
+
+.btn-add {
+  width: 100%;
+}
+
+.btn-add .btn-add-button {
+  width: 100%;
+  padding: 1rem;
+  border: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #3F7AFE;
+  color: white;
+}
+
+.btn-add .btn-add-button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.notApp-txt {
+  margin-top: 1rem;
+}
+
+.notApp-txt div {
+  background-color: #F6F7FB;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.notApp-info-header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notApp-info-header img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.notApp-info-txt h1 {
+  padding-bottom: 1rem;
+}
+
+.notApp-info-txt p {
+  text-align: justify;
+  cursor: pointer;
+}
+
+.notApp-info-txt p:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=notApp.css.map */

@@ -1,0 +1,64 @@
+
+/*catg*/
+
+.catg{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #3F7AFE;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 8rem;
+    
+
+}
+.catg-h1{
+    border-bottom: 2px solid white;
+    width:100%;
+    padding-bottom: .8rem;
+    overflow: hidden;
+    h1{
+        text-align: center;
+        font-size: 26px;
+    }
+    input{
+        width: 24px;
+        height: 24px;
+        &:active{
+            transform: scale(1.1);
+        }
+    }
+
+}
+.catg-content{
+    width: 100%;
+    min-height: 100vh;
+}
+ul{
+    width: 100%;
+    
+    padding-top: 1rem;
+    li{
+        list-style-type: none;
+        text-align: center;
+        cursor: pointer;
+        padding: .3rem;
+        
+        @extend .d-flex-row;
+        align-items: center;
+        justify-content: space-around;
+        
+        span{
+            width: 35px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 50%;
+            margin-left: 5px;
+           
+        }
+        &:hover{
+            background-color: #F6F7FB;
+            color:#3F7AFE;
+            transition: 1s;
+        }
+    }
+}

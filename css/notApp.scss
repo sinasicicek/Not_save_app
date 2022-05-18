@@ -1,0 +1,68 @@
+
+/*notApp*/
+$color:#3F7AFE;
+$color-two:#3BACB6;
+$color-three:#82DBD8;
+$color-four:#B3E8E5;
+
+.notApp{
+    width: 100%;
+    max-height: 130vh;
+    background-color: #dadeef;
+    padding: 1.2rem;
+    justify-content: flex-start !important;
+    overflow: auto;
+   
+}
+.btn-add{
+    width: 100%;
+    .btn-add-button
+    {
+        width: 100%;
+        padding: 1rem;
+        border: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: $color;
+        color: white;
+        &:active{
+            transform: scale(1.1);
+        }
+
+    }
+}
+.notApp-txt{
+    margin-top: 1rem;
+
+    div{
+        
+        background-color: #F6F7FB;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+}
+.notApp-info-header{
+    justify-content: space-between;
+   
+    img{
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+}
+.notApp-info-txt{
+  
+    h1{
+  
+        padding-bottom: 1rem;
+    }
+    p{
+        
+        text-align: justify;
+        cursor: pointer;
+        &:active{
+            transform: scale(1.1);
+        }
+    }
+}
