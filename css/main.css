@@ -13,6 +13,11 @@
   width: 100%;
   padding-bottom: .8rem;
   overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .catg-h1 h1 {
@@ -45,11 +50,17 @@ ul li {
   text-align: center;
   cursor: pointer;
   padding: .3rem;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul li p {
+  width: 100%;
 }
 
 ul li span {
@@ -383,7 +394,47 @@ button {
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .catg {
+    min-height: 100%;
+    padding-top: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .catg-content {
+    width: 100%;
+    min-height: 10vh;
+  }
+  .notApp {
+    width: 100%;
+    padding: 0px;
+  }
+  .notApp-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+    padding-top: 1rem;
+  }
+  .notApp-info textarea {
+    min-width: 90%;
+    min-height: 40%;
+    resize: none;
+    padding: 0rem;
+    font-size: 18px;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    text-align: justify;
+    padding: .5rem;
+  }
+  .btn-add .btn-add-button {
+    width: 50%;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
   .catg {
     min-height: 100%;
     padding-top: 1rem;
