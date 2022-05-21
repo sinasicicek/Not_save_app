@@ -1,7 +1,8 @@
 import Build from "./workCreate.js";
+
 const categ=document.getElementById("category")
 
-/*JSON çekilen veri  buradan alınacak */
+/*JSON çekilen veri  buradan alınacak ./js/json dosyası */
 let category_head=["Geodenesli lorem ","Geodenesli lorem  ieieieieie ieiei eiei"]
 let category_num=[6,2]
 
@@ -50,6 +51,7 @@ return frame2
 
 
 categ.appendChild(frame_create())
-
-
 categ.appendChild(frame_create_two())
+
+
+

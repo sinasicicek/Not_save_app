@@ -1,6 +1,4 @@
 
-
-
 export default class Create
 {
   elementCreate(eleman,classList){
