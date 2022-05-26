@@ -1,6 +1,7 @@
 import build from "../workCreate.js";
 import getr from "../json/get_json.js"
 //import upftNot from "../addNote/updateNotAdd.js"
+import takvmi from "../takvim.js"
 
 const notes=document.getElementById("notes");
 
@@ -95,6 +96,6 @@ localS.forEach(element => {
 
 
 
-
+/*orta alandaki kayıtlı notları oluşturuyor */
   
 

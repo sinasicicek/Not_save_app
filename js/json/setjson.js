@@ -27,3 +27,5 @@
    
     
   }
+
+  //db alanına verileri yazan araç

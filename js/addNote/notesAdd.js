@@ -1,6 +1,7 @@
 
 import get_not from "../json/get_json.js"
 import set_not from "../json/setjson.js"
+import takvmi from "../takvim.js"
 
 
 let ad=document.getElementById("not_ekle")
@@ -14,8 +15,6 @@ const baslik=document.getElementById("not_baslik_add")
 
 let control=true;
 ad.addEventListener('click',()=>{
- 
-    
     if(control){
         
         fra.classList.add("open")
@@ -28,7 +27,6 @@ ad.addEventListener('click',()=>{
         fra.classList.remove("open")
         control=true;
     }
-    
 })
 
 close.addEventListener("click",()=>{
@@ -38,13 +36,10 @@ close.addEventListener("click",()=>{
 
 
 ekle.addEventListener("click",()=>{
-                let takvim=new Date()
-                let gün=takvim.getUTCDay()
-                let ay=takvim.getMonth()
-                let yil=takvim.getFullYear()
+                
 
-                let toplam_tarih=gün+"."+ay+"."+yil
-            
+                let toplam_tarih=takvmi()
+                let takvim=new Date()
 
                 let d= new set_not();
                let lett=localStorage
@@ -54,7 +49,8 @@ ekle.addEventListener("click",()=>{
                     if(lett.key(index) === null) { 
                         console.log(index+" burası boş");
                         let sonuc= d.veri_ekle(takvim.getTime(),toplam_tarih,baslik.value,icerik.value)
-                      
+                        window.location = window.location.href;
+                    
                     }
                     else{
                         console.log(index+" buaralar dolu");
@@ -66,3 +62,5 @@ ekle.addEventListener("click",()=>{
                 
 
 })
+
+/*orta alandaki ekleme kısmı*/

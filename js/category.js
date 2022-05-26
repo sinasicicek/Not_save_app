@@ -54,4 +54,6 @@ categ.appendChild(frame_create())
 categ.appendChild(frame_create_two())
 
 
+//html tarafında categories alanını oluşturuyor
+
 

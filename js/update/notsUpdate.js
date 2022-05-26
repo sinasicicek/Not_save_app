@@ -1,7 +1,7 @@
 import build from "../workCreate.js"
 import jsonget from "../json/get_json.js"
 import jsonset from "../json/setjson.js"
-
+import takvmi from "../takvim.js"
 
 let konu=["Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?"]
 
@@ -51,12 +51,8 @@ function update_btn() {
 
                 if (baslik.value !=="" && konu.value !=="") {
 
-                    let takvim=new Date()
-                    let gün=takvim.getUTCDay()
-                    let ay=takvim.getMonth()
-                    let yil=takvim.getFullYear()
-
-                    let toplam_tarih=gün+"."+ay+"."+yil
+                   
+                    let toplam_tarih=takvmi()
 
 
                    let f=new jsonset()
@@ -72,10 +68,6 @@ function update_btn() {
                 alert("tum alanları doldurunuz")
 }
     })
-
-
-
-
     return buttn
 }
 
@@ -84,4 +76,4 @@ update.appendChild(input_header())
 update.appendChild(textarea())
 update.appendChild(update_btn())
 
-
+/*sağ alandaki seçilen notu güncelliyor*/

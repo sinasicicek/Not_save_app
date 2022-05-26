@@ -22,3 +22,5 @@ export default  function getjson()
     return dizi
     
 }
+
+  //db alanından verileri gekiren araç
