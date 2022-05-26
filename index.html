@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/addNote.css">
+    <link rel="stylesheet" href="./css/catg.css">
+    <link rel="stylesheet" href="./css/notApp.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
     <title>Not App</title>
 </head>
 <body>
-    <div class="frame d-flex">
+    <div class="frame d-flex" id="winfFrame">
         <!--Category-->
             <div class="catg d-flex-center-column" id="category">
 
@@ -19,7 +22,7 @@
         <div class="notApp d-flex-column" id="notes">
             
           <div class="btn-add d-flex-column">
-                <button class="btn-add-button">Add Note</button>
+                <button class="btn-add-button" id="add_note">Add Note</button>
           </div>
 
         </div>
@@ -28,12 +31,20 @@
         <div class="notApp-info d-flex-column" id="update">
                
         </div>
+
+        <!--affnote-->
+        <div class="openWin">
+            <input type="text" class="opeWin_inpt" placeholder="Baslik"> 
+            <textarea name="" id="" cols="30" rows="10" placeholder="Not"></textarea>
+            <button class="btn-button" id="add_btn">Add</button>
+        </div>
     </div>
     
 
     <script type="module" src="./js/category.js"></script>
     <script type="module" src="./js/nots/nots.js"></script>
     <script type="module" src="./js/update/notsUpdate.js"></script>
+    <script src="./js/addNote/notesAdd.js"></script>
 
 </body>
 </html>

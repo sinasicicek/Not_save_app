@@ -1,0 +1,74 @@
+.openWin {
+  background-color: #435e99;
+  width: 20rem;
+  height: 30rem;
+  position: absolute;
+  z-index: 12;
+  left: 30%;
+  top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1rem;
+  display: none;
+}
+
+.openWin textarea {
+  width: 341px;
+  resize: none;
+  font-size: 24px;
+}
+
+.openWin button {
+  border-radius: 5px;
+  width: 80%;
+  padding: 1rem;
+  margin: .5rem;
+  border: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #435e99;
+}
+
+.openWin button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.opeWin_inpt {
+  width: 90%;
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.btn-button {
+  width: 80%;
+  padding: 1rem;
+  margin: .5rem;
+  border: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.btn-button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=addNote.css.map */

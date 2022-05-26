@@ -14,12 +14,12 @@ function frame_create()
         let h1=nesni.elementCreate("h1")
         h1.textContent="Categories"
 
-        let input=nesni.elementCreate("input")
+     /*   let input=nesni.elementCreate("input")
         input.type="image"
-        input.src="./assest/icon/icons8-plus-50.png" 
+        input.src="./assest/icon/icons8-plus-50.png" */
 
         frame1.appendChild(h1)
-        frame1.appendChild(input)
+      //  frame1.appendChild(input)
     return frame1
 }
 

@@ -20,8 +20,6 @@ const update=document.getElementById("update")
 /* input bailşk alanı*/
 function input_header() {
 
-    let dd=new jsonget()
-
     let nesne=new build();
     let input=nesne.elementCreate("input",["inpt"])
     input.type="text";

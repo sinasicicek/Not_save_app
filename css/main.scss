@@ -1,5 +1,4 @@
-@import "catg";
-@import "notApp";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,6 +13,7 @@ body{
 .frame{
     width: 100%;
     min-height: 100vh;
+    position: relative;
 }
 
 
@@ -31,7 +31,7 @@ body{
     align-items: center;
 }
 .d-flex-space-around{
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .d-flex-center-column{
     display: flex;
@@ -231,7 +231,7 @@ button{cursor: pointer;}
 {
 
     .catg{
-        
+        width:50%;
         min-height: 100%;
         padding-top: 1rem;
         justify-content: flex-start;

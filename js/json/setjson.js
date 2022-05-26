@@ -1,11 +1,16 @@
-   export default function db_wrt(tarih,baslik,icerik)
+   export default function db_wrt(İd,tarih,baslik,icerik)
   {
     
-    const person = {
+    /*const person = {
             Tarih:tarih,
             Baslik: baslik,
             İcerik: icerik,
-        }
+        }*/
+        const person = {
+          "kategorsi1":[
+            {id:İd,Tarih:tarih,baslik:baslik,icerik:icerik}
+          ]
+      }
     let respo=true
 
     if(tarih !=null || baslik !=null || icerik!=null){
