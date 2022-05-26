@@ -31,6 +31,7 @@
 
 .notApp-txt {
   margin-top: 1rem;
+  min-width: 100%;
 }
 
 .notApp-txt div {
@@ -51,6 +52,12 @@
   cursor: pointer;
 }
 
+.notApp-info-header img:hover {
+  border-radius: 50%;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
 .notApp-info-txt h1 {
   padding-bottom: 1rem;
 }
@@ -63,5 +70,15 @@
 .notApp-info-txt p:active {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.notClick:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#update {
+  display: none;
 }
 /*# sourceMappingURL=notApp.css.map */

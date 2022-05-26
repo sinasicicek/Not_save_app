@@ -16,6 +16,9 @@
     width:100%;
     padding-bottom: .8rem;
     overflow: hidden;
+    justify-content: space-between;
+    padding-left: .5rem;
+    padding-right: .5rem;
     h1{
         text-align: center;
         font-size: 26px;
@@ -42,11 +45,11 @@ ul{
         text-align: center;
         cursor: pointer;
         padding: .3rem;
-        
+        width: 100%;
         @extend .d-flex-row;
         align-items: center;
-        justify-content: space-around;
-        
+        justify-content:space-between;
+        p{ width: 100%;}
         span{
             width: 35px;
             height: 20px;

@@ -5,100 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/addNote.css">
+    <link rel="stylesheet" href="./css/catg.css">
+    <link rel="stylesheet" href="./css/notApp.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
     <title>Not App</title>
 </head>
 <body>
-    <div class="frame d-flex">
-        <div class="catg d-flex-center-column">
-            <div class="catg-h1 d-flex-row  d-flex-align-items d-flex-space-around">
-                <h1>Categories</h1>
-                <input type="image" src="./assest/icon/icons8-plus-50.png" alt="">
-            </div>
-            <div class="catg-content">
-                <ul>
-                    <li><p>Geodenesli lorem  ieieieieie ieiei eiei</p> <span>6</span></li>
-                    <li><p>Geodenesli lorem </p> <span>6</span></li>
+    <div class="frame d-flex" >
+        <!--Category-->
+            <div class="catg d-flex-center-column" id="category">
 
-                </ul>
             </div>
+        <!--not-->
+        <div class="notApp d-flex-column" id="notes">
+            
+          <div class="btn-add d-flex-column">
+                <button class="btn-add-button" id="not_ekle">Add Note</button>
+          </div>
+
         </div>
-        <div class="notApp d-flex-column">
-            <div class="btn-add d-flex-column">
-                <button class="btn-add-button">Add Note</button>
-            </div>
-            <div class="notApp-txt">
-               <div>
-                <div class="notApp-info-header d-flex-row d-flex-space-around">
-                    <span>22/10/2022</span> <img src="./assest/icon/icons8-delete-80.png" alt="">
-                </div>
-                <div class="notApp-info-txt">
-                    <h1>Geodenesli Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?</p>
 
-                </div>
-               </div>
-               <div>
-                <div class="notApp-info-header d-flex-row d-flex-space-around">
-                    <span>22/10/2022</span> <img src="./assest/icon/icons8-delete-80.png" alt="">
-                </div>
-                <div class="notApp-info-txt">
-                    <h1>Geodenesli Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?</p>
-
-                </div>
-               </div>
-               <div>
-                <div class="notApp-info-header d-flex-row d-flex-space-around">
-                    <span>22/10/2022</span> <img src="./assest/icon/icons8-delete-80.png" alt="">
-                </div>
-                <div class="notApp-info-txt">
-                    <h1>Geodenesli Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?</p>
-
-                </div>
-               </div>
-               <div>
-                <div class="notApp-info-header d-flex-row d-flex-space-around">
-                    <span>22/10/2022</span> <img src="./assest/icon/icons8-delete-80.png" alt="">
-                </div>
-                <div class="notApp-info-txt">
-                    <h1>Geodenesli Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?</p>
-
-                </div>
-               </div>
-               <div>
-                <div class="notApp-info-header d-flex-row d-flex-space-around">
-                    <span>22/10/2022</span> <img src="./assest/icon/icons8-delete-80.png" alt="">
-                </div>
-                <div class="notApp-info-txt">
-                    <h1>Geodenesli Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?</p>
-
-                </div>
-               </div>
-               <div>
-                <div class="notApp-info-header d-flex-row d-flex-space-around">
-                    <span>22/10/2022</span> <img src="./assest/icon/icons8-delete-80.png" alt="">
-                </div>
-                <div class="notApp-info-txt">
-                    <h1>Geodenesli Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?</p>
-
-                </div>
-               </div>
-            </div>
+        <!--not update-->
+        <div class="notApp-info d-flex-column" id="update">
+               
         </div>
-        <div class="notApp-info d-flex-column">
-        <input type="text" name="" id="" class="inpt" placeholder="Geodenesli Lorem">            
-        <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?
+
+        <!--affnote-->
+        <div class="openWin" id="winfFrame">
+            <input type="text" class="opeWin_inpt" placeholder="Baslik" id="not_baslik_add"> 
+            <textarea name="" id="not_text_add" cols="30" rows="10" placeholder="Not">
+                
             </textarea>
-            <button class="btn-update-button">Update Note</button>
-
+            <div class="d-flex-row">
+                <button class="btn-button" id="add_btn">Add</button>
+                <button class="btn-button" id="add_btn_close">Close</button></div>
         </div>
     </div>
     
+
+    <script type="module" src="./js/category.js"></script>
+    <script type="module" src="./js/nots/nots.js"></script>
+    <script type="module" src="./js/update/notsUpdate.js"></script>
+    <script type="module" src="./js/addNote/notesAdd.js"></script>
+    <script type="module" src="./js/addNote/getnoteAdd.js"></script>
 </body>
 </html>
