@@ -1,9 +1,10 @@
 import Build from "./workCreate.js";
+import get_not from "./json/get_json.js"
 
 const categ=document.getElementById("category")
 
 /*JSON çekilen veri  buradan alınacak ./js/json dosyası */
-let category_head=["Geodenesli lorem ","Geodenesli lorem  ieieieieie ieiei eiei"]
+let category_head=get_not()
 let category_num=[6,2]
 
 
@@ -34,13 +35,15 @@ category_head.forEach(ekle=>{
     let li=nesne_ul.elementCreate("li")
     let p=nesne_ul.elementCreate("p")
     let span=nesne_ul.elementCreate("span")
-    span.textContent=category_num[number]
+    span.textContent=ekle.Tarih
 
-    p.textContent=ekle;
+    p.textContent=ekle.baslik;
    
-
-    li.appendChild(p)
+    console.log(ekle.baslik);
+    
     li.appendChild(span)
+    li.appendChild(p)
+    
     ul.appendChild(li)
     number=number+1;
 })

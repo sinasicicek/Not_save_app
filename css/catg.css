@@ -1,1 +1,82 @@
-/* No CSS *//*# sourceMappingURL=catg.css.map */
+/*catg*/
+.catg {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #3F7AFE;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  padding-top: 8rem;
+}
+
+.catg-h1 {
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding-bottom: .8rem;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.catg-h1 h1 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.catg-h1 input {
+  width: 24px;
+  height: 24px;
+}
+
+.catg-h1 input:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.catg-content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+ul {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+ul li {
+  list-style-type: none;
+  text-align: center;
+  cursor: pointer;
+  padding: .3rem;
+  width: 100%;
+  /*@extend .d-flex-row;*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul li p {
+  width: 100%;
+  text-overflow: clip;
+}
+
+ul li span {
+  width: 35px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+ul li:hover {
+  background-color: #F6F7FB;
+  color: #3F7AFE;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+/*# sourceMappingURL=catg.css.map */
