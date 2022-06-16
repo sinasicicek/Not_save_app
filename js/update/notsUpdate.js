@@ -3,7 +3,6 @@ import jsonget from "../json/get_json.js"
 import jsonset from "../json/setjson.js"
 import takvmi from "../takvim.js"
 
-let konu=["Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis et, distinctio commodi accusamus iure laborum! Quasi, voluptatum soluta perspiciatis cupiditate quas quam dolore consectetur quo. Saepe fugiat tempora asperiores?"]
 
 function name() {
     const person = {

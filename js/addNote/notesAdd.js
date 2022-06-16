@@ -41,6 +41,7 @@ ekle.addEventListener("click",()=>{
                 let toplam_tarih=takvmi()
                 let takvim=new Date()
 
+                console.log(toplam_tarih);
                 let d= new set_not();
                let lett=localStorage
 

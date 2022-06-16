@@ -27,14 +27,23 @@ localS.forEach(element => {
 
    
         /*"notApp-info-header"*/
-        function div_notTxt_info_header()
+        function div_notTxt_info_header(delete_id)
         {
             let nesne=new build();
+          
+            let nms=localStorage.key(delete_id)
                 let div_notTxt_info_header=nesne.elementCreate("div",["notApp-info-header", "d-flex-row", "d-flex-space-around"])
                 let div_notTxt_info_header_span=nesne.elementCreate("span")
                     div_notTxt_info_header_span.textContent=tarih[0]
                     let div_notTxt_info_header_img=nesne.elementCreate("img")
                         div_notTxt_info_header_img.src="./assest/icon/icons8-delete-80.png"
+                        let iid=nms+"del"
+                        div_notTxt_info_header_img.id=iid
+                        div_notTxt_info_header_img.addEventListener("click",()=>{
+                           localStorage.removeItem(nms)
+                          
+                           window.location = window.location.href;
+                        })
 
                 div_notTxt_info_header.appendChild(div_notTxt_info_header_span)
                 div_notTxt_info_header.appendChild(div_notTxt_info_header_img)
@@ -82,7 +91,7 @@ localS.forEach(element => {
         
         })
         
-        div_notTxt_frame.appendChild(div_notTxt_info_header());
+        div_notTxt_frame.appendChild(div_notTxt_info_header(number));
         div_notTxt_frame.appendChild(div_not_app_info_txt());
         div_notTxt.appendChild(div_notTxt_frame);
        
